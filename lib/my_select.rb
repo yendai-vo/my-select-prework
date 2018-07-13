@@ -1,11 +1,11 @@
 def my_select(collection)
-  select = []
+  numbers = []
   i = 0
    while i < collection.length
      if yield(collection[i])
-       select << (collection[i])
+       numbers << (collection[i])
      end
      i +=1
    end
-   select
+   numbers
 end
